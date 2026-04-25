@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${geistMono.variable} antialiased`}>
-      <body className="min-h-screen bg-white text-slate-900">{children}</body>
+      <body className="min-h-screen bg-[#0a0a0a] text-gray-200">{children}</body>
     </html>
   );
 }
