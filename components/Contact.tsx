@@ -15,7 +15,7 @@ export default function Contact() {
           <div className="space-y-5">
             {[
               { label: "Email", display: "zhou.siyu4@northeastern.edu", href: "mailto:zhou.siyu4@northeastern.edu" },
-              { label: "GitHub", display: "github.com/zzzzssyy", href: "https://github.com/zzzzssyy" },
+              { label: "GitHub", display: "github.com/zzzzssyy", href: "https://github.com/zzzzssyy/Econ-Portfolio" },
             ].map(({ label, display, href }) => (
               <div key={label}>
                 <p className="text-xs font-semibold tracking-widest uppercase text-neutral-400 mb-1">
