@@ -5,7 +5,7 @@ const projects = [
     description:
       "Analyzed The Economist's Big Mac Index to test purchasing power parity and the Law of One Price. Calculated implied PPP exchange rates and currency misalignment across countries.",
     tags: ["Python", "Pandas", "Economic Analysis", "Data Visualization"],
-    repoUrl: "#",
+    repoUrl: "https://github.com/zzzzssyy/Econ-Portfolio",
   },
   {
     number: "02",
@@ -13,7 +13,7 @@ const projects = [
     description:
       "Studied how having young children affects women's annual working hours using the Mroz labor supply dataset. Used OLS regression with robust standard errors and compared full-sample and working-women-only results to discuss selection bias.",
     tags: ["Python", "Pandas", "Statsmodels", "Regression"],
-    repoUrl: "#",
+    repoUrl: "https://github.com/zzzzssyy/Econ-Portfolio",
   },
   {
     number: "03",
@@ -21,7 +21,7 @@ const projects = [
     description:
       "Explored how personalized recommendation systems shape user attention, information acceptance, and privacy concerns. Connects survey analysis with broader questions about digital platforms and algorithmic influence.",
     tags: ["Survey Analysis", "Data Visualization", "Platform Economics", "Research Writing"],
-    repoUrl: "#",
+    repoUrl: "https://github.com/zzzzssyy/Econ-Portfolio",
   },
 ];
 
@@ -44,6 +44,8 @@ export default function Projects() {
                 <span className="font-mono text-xs text-neutral-300">{project.number}</span>
                 <a
                   href={project.repoUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-xs font-medium text-neutral-400 hover:text-neutral-700 transition-colors"
                 >
                   GitHub →
