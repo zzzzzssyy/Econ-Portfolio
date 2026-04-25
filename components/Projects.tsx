@@ -1,35 +1,35 @@
 const projects = [
   {
     number: "01",
-    title: "Random Forest vs. OLS: California Housing Prediction",
+    title: "Random Forest vs OLS — California Housing Price Prediction",
     description:
-      "Compared Decision Tree, Ridge Regression, and Random Forest on 20,640 housing observations. Random Forest achieved strong generalization (Test R² ≈ 0.81 vs Ridge ≈ 0.58), highlighting non-linear relationships and feature importance.",
-    tags: ["Python", "scikit-learn", "Random Forest", "Regression"],
-    repoUrl: "https://github.com/zzzzssyy/ECON3916-33674-Statistical-Machine-Learning/tree/main/Lab%2019",
+      "Compared Decision Trees, Ridge Regression, and Random Forest on California housing data. Random Forest significantly improved test performance, highlighting nonlinear relationships and feature interactions missed by OLS.",
+    tags: ["Python", "scikit-learn", "Random Forest", "OLS"],
+    repoUrl: "https://github.com/zzzzzssyy/ECON3916-33674-Statistical-Machine-Learning/tree/main/Lab%2019",
   },
   {
     number: "02",
     title: "Clustering World Economies with K-Means & PCA",
     description:
-      "Applied unsupervised learning to cluster ~160 countries using World Bank indicators. Used standardization, PCA, and K-Means to uncover global development patterns aligned with income classifications.",
+      "Applied unsupervised learning to group ~160 countries using World Bank indicators. PCA visualization revealed clear economic clusters aligned with global development patterns.",
     tags: ["Python", "scikit-learn", "K-Means", "PCA"],
-    repoUrl: "https://github.com/zzzzssyy/ECON3916-33674-Statistical-Machine-Learning/tree/main/Lab%2022",
+    repoUrl: "https://github.com/zzzzzssyy/ECON3916-33674-Statistical-Machine-Learning/tree/main/Lab%2022",
   },
   {
     number: "03",
-    title: "FOMC Text Analysis: Sentiment & Clustering",
+    title: "FOMC Text Analysis — Sentiment and Clustering",
     description:
-      "Built an NLP pipeline on FOMC meeting transcripts using TF-IDF and sentiment analysis. Identified shifts in Fed communication across economic cycles and clustered policy regimes.",
+      "Built an NLP pipeline to analyze Federal Reserve meeting minutes. Extracted sentiment and identified structural shifts in communication across economic cycles.",
     tags: ["Python", "NLP", "TF-IDF", "Clustering"],
-    repoUrl: "https://github.com/zzzzssyy/ECON3916-33674-Statistical-Machine-Learning/tree/main/Lab%2023",
+    repoUrl: "https://github.com/zzzzzssyy/ECON3916-33674-Statistical-Machine-Learning/tree/main/Lab%2023",
   },
   {
     number: "04",
-    title: "Causal ML: Double Machine Learning for Policy Evaluation",
+    title: "Causal ML — Double Machine Learning for 401(k) Policy Evaluation",
     description:
-      "Estimated the causal effect of 401(k) eligibility using Double Machine Learning (DML). Demonstrated how naive methods are biased and applied cross-fitting for robust treatment effect estimation.",
-    tags: ["Python", "Causal ML", "DML", "Econometrics"],
-    repoUrl: "https://github.com/zzzzssyy/ECON3916-33674-Statistical-Machine-Learning/tree/main/Lab%2024",
+      "Estimated causal effects of 401(k) eligibility using Double Machine Learning. Demonstrated how ML can improve causal inference under high-dimensional confounding.",
+    tags: ["Python", "Causal Inference", "Double ML", "Econometrics"],
+    repoUrl: "https://github.com/zzzzzssyy/ECON3916-33674-Statistical-Machine-Learning/tree/main/Lab%2024",
   },
 ];
 
