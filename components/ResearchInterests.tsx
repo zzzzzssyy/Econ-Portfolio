@@ -1,9 +1,9 @@
 const interests = [
   {
     number: "01",
-    title: "Causal Inference in Economics",
+    title: "Clustering and Pattern Discovery in Economic Data",
     description:
-      "Exploring identification strategies — instrumental variables, regression discontinuity, and difference-in-differences — to draw credible causal conclusions from observational data.",
+      "Uncovering hidden structure in economic data using unsupervised learning methods such as clustering and dimensionality reduction to identify meaningful patterns and group-level insights.",
     icon: (
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
         <path d="M8 3H5a2 2 0 0 0-2 2v3" />
