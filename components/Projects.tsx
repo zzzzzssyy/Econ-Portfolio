@@ -1,27 +1,35 @@
 const projects = [
   {
     number: "01",
-    title: "IMF Early Warning System (EWS)",
+    title: "Random Forest vs. OLS: California Housing Prediction",
     description:
-      "Built a machine learning pipeline to replicate and extend the IMF's Early Warning System for financial crises. Applied classification models to macroeconomic panel data to predict crisis onset across countries.",
-    tags: ["Python", "Scikit-Learn", "Pandas", "Machine Learning"],
-    repoUrl: "https://github.com/zzzzssyy/Econ-Portfolio",
+      "Compared Decision Tree, Ridge Regression, and Random Forest on 20,640 housing observations. Random Forest achieved strong generalization (Test R² ≈ 0.81 vs Ridge ≈ 0.58), highlighting non-linear relationships and feature importance.",
+    tags: ["Python", "scikit-learn", "Random Forest", "Regression"],
+    repoUrl: "https://github.com/zzzzssyy/ECON3916-33674-Statistical-Machine-Learning/tree/main/Lab%2019",
   },
   {
     number: "02",
-    title: "Causal Inference & Non-Parametric Statistics",
+    title: "Clustering World Economies with K-Means & PCA",
     description:
-      "Explored causal identification strategies and non-parametric methods applied to economic data. Topics include kernel density estimation, regression discontinuity, and permutation-based hypothesis testing.",
-    tags: ["Python", "Statsmodels", "Causal Inference", "Non-Parametric"],
-    repoUrl: "https://github.com/zzzzssyy/Econ-Portfolio",
+      "Applied unsupervised learning to cluster ~160 countries using World Bank indicators. Used standardization, PCA, and K-Means to uncover global development patterns aligned with income classifications.",
+    tags: ["Python", "scikit-learn", "K-Means", "PCA"],
+    repoUrl: "https://github.com/zzzzssyy/ECON3916-33674-Statistical-Machine-Learning/tree/main/Lab%2022",
   },
   {
     number: "03",
-    title: "Female Labor Supply Analysis",
+    title: "FOMC Text Analysis: Sentiment & Clustering",
     description:
-      "Studied how having young children affects women's annual working hours using the Mroz labor supply dataset. Used OLS regression with robust standard errors and compared full-sample and working-women-only results to discuss selection bias.",
-    tags: ["Python", "Pandas", "Statsmodels", "Regression"],
-    repoUrl: "https://github.com/zzzzssyy/Econ-Portfolio",
+      "Built an NLP pipeline on FOMC meeting transcripts using TF-IDF and sentiment analysis. Identified shifts in Fed communication across economic cycles and clustered policy regimes.",
+    tags: ["Python", "NLP", "TF-IDF", "Clustering"],
+    repoUrl: "https://github.com/zzzzssyy/ECON3916-33674-Statistical-Machine-Learning/tree/main/Lab%2023",
+  },
+  {
+    number: "04",
+    title: "Causal ML: Double Machine Learning for Policy Evaluation",
+    description:
+      "Estimated the causal effect of 401(k) eligibility using Double Machine Learning (DML). Demonstrated how naive methods are biased and applied cross-fitting for robust treatment effect estimation.",
+    tags: ["Python", "Causal ML", "DML", "Econometrics"],
+    repoUrl: "https://github.com/zzzzssyy/ECON3916-33674-Statistical-Machine-Learning/tree/main/Lab%2024",
   },
 ];
 
