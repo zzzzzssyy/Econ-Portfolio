@@ -21,24 +21,24 @@ const interests = [
 
 export default function ResearchInterests() {
   return (
-    <section id="research" className="py-16 border-t border-neutral-100">
+    <section id="research" className="py-20 border-t border-slate-100">
       <div className="max-w-5xl mx-auto px-6">
-        <div className="mb-8">
-          <h2 className="text-2xl font-bold tracking-tight mb-1">Research Interests</h2>
-          <p className="text-sm text-neutral-400">Topics I think about and want to explore further.</p>
+        <div className="mb-10">
+          <h2 className="text-2xl font-bold tracking-tight text-slate-900 mb-1">Research Interests</h2>
+          <p className="text-sm text-slate-400">Topics I think about and want to explore further.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {interests.map((item) => (
             <div
               key={item.number}
-              className="flex flex-col border border-neutral-200 rounded-xl p-5 hover:border-indigo-200 hover:shadow-md transition-all duration-200"
+              className="group flex flex-col bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-blue-200 transition-all duration-200"
             >
-              <span className="font-mono text-xs text-neutral-300 mb-4">{item.number}</span>
-              <h3 className="text-sm font-semibold text-neutral-900 leading-snug mb-3">
+              <span className="font-mono text-xs text-slate-300 mb-4">{item.number}</span>
+              <h3 className="text-sm font-bold text-slate-900 leading-snug mb-3 group-hover:text-blue-600 transition-colors duration-200">
                 {item.title}
               </h3>
-              <p className="text-xs text-neutral-500 leading-relaxed">{item.description}</p>
+              <p className="text-xs text-slate-500 leading-relaxed">{item.description}</p>
             </div>
           ))}
         </div>

@@ -35,41 +35,41 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-16 border-t border-neutral-100">
+    <section id="projects" className="py-20 border-t border-slate-100">
       <div className="max-w-5xl mx-auto px-6">
-        <div className="mb-8">
-          <h2 className="text-2xl font-bold tracking-tight mb-1">Projects</h2>
-          <p className="text-sm text-neutral-400">Selected research and analysis work.</p>
+        <div className="mb-10">
+          <h2 className="text-2xl font-bold tracking-tight text-slate-900 mb-1">Projects</h2>
+          <p className="text-sm text-slate-400">Selected coursework and research analysis.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {projects.map((project) => (
             <div
               key={project.number}
-              className="group flex flex-col border border-neutral-200 rounded-xl p-5 hover:border-indigo-200 hover:shadow-md transition-all duration-200"
+              className="group flex flex-col bg-white border border-slate-200 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-blue-200 transition-all duration-200"
             >
-              <div className="flex items-center justify-between mb-4">
-                <span className="font-mono text-xs text-neutral-300">{project.number}</span>
+              <div className="flex items-center justify-between mb-5">
+                <span className="font-mono text-xs text-slate-300">{project.number}</span>
                 <a
                   href={project.repoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs font-medium text-neutral-400 hover:text-neutral-700 transition-colors"
+                  className="text-xs font-semibold text-blue-500 hover:text-blue-700 transition-colors"
                 >
                   GitHub →
                 </a>
               </div>
-              <h3 className="text-sm font-semibold text-neutral-900 leading-snug mb-3 group-hover:text-indigo-600 transition-colors duration-200">
+              <h3 className="text-sm font-bold text-slate-900 leading-snug mb-3 group-hover:text-blue-600 transition-colors duration-200">
                 {project.title}
               </h3>
-              <p className="text-xs text-neutral-500 leading-relaxed mb-4 flex-1">
+              <p className="text-xs text-slate-500 leading-relaxed mb-5 flex-1">
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-1.5 mt-auto">
                 {project.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="px-2 py-0.5 text-xs font-medium bg-neutral-100 text-neutral-500 rounded-full"
+                    className="px-2.5 py-1 text-xs font-medium bg-slate-100 text-slate-600 rounded-md"
                   >
                     {tag}
                   </span>

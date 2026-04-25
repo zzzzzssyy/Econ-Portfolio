@@ -1,20 +1,21 @@
 export default function About() {
   return (
-    <section id="about" className="pt-32 pb-16">
+    <section id="about" className="pt-36 pb-20">
       <div className="max-w-5xl mx-auto px-6">
-        <p className="text-xs font-mono text-indigo-500 mb-4 tracking-widest uppercase">
+        <p className="text-xs font-semibold text-blue-500 mb-5 tracking-widest uppercase">
           Hello, I&apos;m
         </p>
-        <h1 className="text-5xl sm:text-6xl font-bold tracking-tight text-neutral-900 mb-4 leading-tight">
+        <h1 className="font-bold tracking-tight text-slate-900 mb-4 leading-tight"
+            style={{ fontSize: "clamp(2.5rem, 5vw, 3.75rem)" }}>
           Siyu Zhou
         </h1>
-        <p className="text-lg text-neutral-500 max-w-2xl leading-relaxed mb-2">
+        <p className="text-lg font-medium text-slate-600 max-w-2xl leading-relaxed mb-2">
           Senior Economics student at Northeastern University
         </p>
-        <p className="text-xs font-mono text-neutral-400 max-w-2xl mb-5">
+        <p className="text-xs font-mono text-slate-400 max-w-2xl mb-6">
           ECON3916 33674 — Statistical &amp; Machine Learning · SEC 01 · Spring 2026 [BOS-1-TR]
         </p>
-        <p className="text-sm text-neutral-400 max-w-2xl leading-relaxed mb-8">
+        <p className="text-base text-slate-500 max-w-2xl leading-relaxed mb-10">
           I am a senior Economics student interested in data analysis, machine learning, and applied
           economic research. My portfolio highlights coursework and projects that connect economic
           reasoning with Python-based statistical and machine learning methods.
@@ -22,13 +23,13 @@ export default function About() {
         <div className="flex flex-wrap gap-3">
           <a
             href="#projects"
-            className="inline-flex items-center px-5 py-2 bg-neutral-900 text-white text-sm font-medium rounded-full hover:bg-neutral-700 transition-colors duration-150"
+            className="inline-flex items-center px-6 py-2.5 bg-slate-900 text-white text-sm font-semibold rounded-lg hover:bg-slate-700 transition-colors duration-150 shadow-sm"
           >
-            View my work
+            View projects
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center px-5 py-2 border border-neutral-300 text-neutral-600 text-sm font-medium rounded-full hover:border-neutral-500 hover:text-neutral-900 transition-colors duration-150"
+            className="inline-flex items-center px-6 py-2.5 border border-slate-300 text-slate-600 text-sm font-semibold rounded-lg hover:border-slate-500 hover:text-slate-900 transition-colors duration-150"
           >
             Get in touch
           </a>
