@@ -1,26 +1,26 @@
 const projects = [
   {
     number: "01",
-    title: "Big Mac Index and Purchasing Power Parity",
+    title: "IMF Early Warning System (EWS)",
     description:
-      "Analyzed The Economist's Big Mac Index to test purchasing power parity and the Law of One Price. Calculated implied PPP exchange rates and currency misalignment across countries.",
-    tags: ["Python", "Pandas", "Economic Analysis", "Data Visualization"],
+      "Built a machine learning pipeline to replicate and extend the IMF's Early Warning System for financial crises. Applied classification models to macroeconomic panel data to predict crisis onset across countries.",
+    tags: ["Python", "Scikit-Learn", "Pandas", "Machine Learning"],
     repoUrl: "https://github.com/zzzzssyy/Econ-Portfolio",
   },
   {
     number: "02",
-    title: "Female Labor Supply and Young Children",
+    title: "Causal Inference & Non-Parametric Statistics",
     description:
-      "Studied how having young children affects women's annual working hours using the Mroz labor supply dataset. Used OLS regression with robust standard errors and compared full-sample and working-women-only results to discuss selection bias.",
-    tags: ["Python", "Pandas", "Statsmodels", "Regression"],
+      "Explored causal identification strategies and non-parametric methods applied to economic data. Topics include kernel density estimation, regression discontinuity, and permutation-based hypothesis testing.",
+    tags: ["Python", "Statsmodels", "Causal Inference", "Non-Parametric"],
     repoUrl: "https://github.com/zzzzssyy/Econ-Portfolio",
   },
   {
     number: "03",
-    title: "Recommendation Algorithms and Digital Entertainment",
+    title: "Female Labor Supply Analysis",
     description:
-      "Explored how personalized recommendation systems shape user attention, information acceptance, and privacy concerns. Connects survey analysis with broader questions about digital platforms and algorithmic influence.",
-    tags: ["Survey Analysis", "Data Visualization", "Platform Economics", "Research Writing"],
+      "Studied how having young children affects women's annual working hours using the Mroz labor supply dataset. Used OLS regression with robust standard errors and compared full-sample and working-women-only results to discuss selection bias.",
+    tags: ["Python", "Pandas", "Statsmodels", "Regression"],
     repoUrl: "https://github.com/zzzzssyy/Econ-Portfolio",
   },
 ];

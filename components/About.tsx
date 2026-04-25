@@ -8,13 +8,16 @@ export default function About() {
         <h1 className="text-5xl sm:text-6xl font-bold tracking-tight text-neutral-900 mb-4 leading-tight">
           Siyu Zhou
         </h1>
-        <p className="text-lg text-neutral-500 max-w-2xl leading-relaxed mb-4">
-          Senior Economics student focused on data analysis, economic research, and machine learning.
+        <p className="text-lg text-neutral-500 max-w-2xl leading-relaxed mb-2">
+          Senior Economics student at Northeastern University
+        </p>
+        <p className="text-xs font-mono text-neutral-400 max-w-2xl mb-5">
+          ECON3916 33674 — Statistical &amp; Machine Learning · SEC 01 · Spring 2026 [BOS-1-TR]
         </p>
         <p className="text-sm text-neutral-400 max-w-2xl leading-relaxed mb-8">
-          I&apos;m a senior Economics student at Northeastern University. My work connects economic
-          reasoning with Python-based data analysis to explore real-world questions and communicate
-          findings clearly.
+          I am a senior Economics student interested in data analysis, machine learning, and applied
+          economic research. My portfolio highlights coursework and projects that connect economic
+          reasoning with Python-based statistical and machine learning methods.
         </p>
         <div className="flex flex-wrap gap-3">
           <a
