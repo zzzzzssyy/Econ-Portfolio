@@ -14,9 +14,8 @@ export default function Contact() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="space-y-5">
             {[
-              { label: "Email", display: "your@email.com", href: "#" },
-              { label: "GitHub", display: "github.com/siyuzhou", href: "#" },
-              { label: "LinkedIn", display: "linkedin.com/in/siyuzhou", href: "#" },
+              { label: "Email", display: "zhou.siyu4@northeastern.edu", href: "mailto:zhou.siyu4@northeastern.edu" },
+              { label: "GitHub", display: "github.com/zzzzssyy", href: "https://github.com/zzzzssyy" },
             ].map(({ label, display, href }) => (
               <div key={label}>
                 <p className="text-xs font-semibold tracking-widest uppercase text-neutral-400 mb-1">
