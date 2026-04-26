@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useTheme } from "./ThemeProvider";
 
 const links = [
@@ -27,14 +28,37 @@ function MoonIcon() {
   );
 }
 
+function HamburgerIcon({ open }: { open: boolean }) {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      {open ? (
+        <>
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </>
+      ) : (
+        <>
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </>
+      )}
+    </svg>
+  );
+}
+
 export default function Nav() {
   const { theme, toggle } = useTheme();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <header
       className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b"
       style={{ background: "var(--c-nav)", borderColor: "var(--c-border)" }}
     >
+      {/* Main bar */}
       <nav className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         <a
           href="#about"
@@ -43,7 +67,9 @@ export default function Nav() {
         >
           Siyu Zhou
         </a>
-        <div className="flex items-center gap-6">
+
+        {/* Desktop links */}
+        <div className="hidden md:flex items-center gap-6">
           <ul className="flex gap-7">
             {links.map((link) => (
               <li key={link.href}>
@@ -66,7 +92,47 @@ export default function Nav() {
             {theme === "dark" ? <SunIcon /> : <MoonIcon />}
           </button>
         </div>
+
+        {/* Mobile: toggle + hamburger */}
+        <div className="flex md:hidden items-center gap-2">
+          <button
+            onClick={toggle}
+            aria-label="Toggle theme"
+            className="p-2 rounded-lg transition-all duration-150 hover:text-blue-500"
+            style={{ color: "var(--c-text-3)", background: "var(--c-tag-bg)" }}
+          >
+            {theme === "dark" ? <SunIcon /> : <MoonIcon />}
+          </button>
+          <button
+            onClick={() => setMenuOpen((prev) => !prev)}
+            aria-label="Toggle menu"
+            className="p-2 rounded-lg transition-all duration-150 hover:text-blue-500"
+            style={{ color: "var(--c-text-3)", background: "var(--c-tag-bg)" }}
+          >
+            <HamburgerIcon open={menuOpen} />
+          </button>
+        </div>
       </nav>
+
+      {/* Mobile dropdown menu */}
+      {menuOpen && (
+        <div
+          className="md:hidden border-t px-6 py-4 flex flex-col gap-4"
+          style={{ background: "var(--c-nav)", borderColor: "var(--c-border)" }}
+        >
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={closeMenu}
+              className="text-sm font-medium hover:text-blue-500 transition-colors duration-150 py-1"
+              style={{ color: "var(--c-text-2)" }}
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+      )}
     </header>
   );
 }
