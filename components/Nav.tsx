@@ -31,11 +31,15 @@ export default function Nav() {
   const { theme, toggle } = useTheme();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-[#0a0a0a]/90 backdrop-blur-md border-b border-slate-200 dark:border-gray-800">
+    <header
+      className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md border-b"
+      style={{ background: "var(--c-nav)", borderColor: "var(--c-border)" }}
+    >
       <nav className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
         <a
           href="#about"
-          className="text-sm font-bold tracking-tight text-slate-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-150"
+          className="text-sm font-bold tracking-tight hover:text-blue-500 transition-colors duration-150"
+          style={{ color: "var(--c-text-1)" }}
         >
           Siyu Zhou
         </a>
@@ -45,7 +49,8 @@ export default function Nav() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-sm font-medium text-slate-500 dark:text-gray-500 hover:text-slate-900 dark:hover:text-gray-100 transition-colors duration-150"
+                  className="text-sm font-medium hover:text-blue-500 transition-colors duration-150"
+                  style={{ color: "var(--c-text-3)" }}
                 >
                   {link.label}
                 </a>
@@ -55,7 +60,8 @@ export default function Nav() {
           <button
             onClick={toggle}
             aria-label="Toggle theme"
-            className="p-2 rounded-lg text-slate-500 dark:text-gray-400 hover:text-slate-900 dark:hover:text-gray-100 hover:bg-slate-100 dark:hover:bg-gray-800 transition-all duration-150"
+            className="p-2 rounded-lg transition-all duration-150 hover:text-blue-500"
+            style={{ color: "var(--c-text-3)", background: "var(--c-tag-bg)" }}
           >
             {theme === "dark" ? <SunIcon /> : <MoonIcon />}
           </button>

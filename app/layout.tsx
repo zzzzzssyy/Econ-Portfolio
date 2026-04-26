@@ -25,12 +25,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${geistMono.variable} antialiased dark`} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${inter.variable} ${geistMono.variable} antialiased`}
+      suppressHydrationWarning
+    >
       <head>
-        {/* Prevent flash of wrong theme */}
-        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem('theme')||'dark';if(t==='dark'){document.documentElement.classList.add('dark');}else{document.documentElement.classList.remove('dark');}}catch(e){document.documentElement.classList.add('dark');}})();` }} />
+        {/* Apply saved theme before first paint to avoid flash */}
+        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem('theme')||'dark';document.documentElement.classList.toggle('dark',t==='dark');}catch(e){document.documentElement.classList.add('dark');}})();` }} />
       </head>
-      <body className="min-h-screen bg-white dark:bg-[#0a0a0a] text-slate-900 dark:text-gray-200 transition-colors duration-300">
+      <body className="min-h-screen transition-colors duration-300">
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

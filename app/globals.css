@@ -1,20 +1,54 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
+/* ── Theme tokens ───────────────────────────────── */
 :root {
+  --c-bg:            #ffffff;
+  --c-bg-alt:        #f8fafc;
+  --c-card:          #ffffff;
+  --c-border:        #e2e8f0;
+  --c-border-input:  #d1d5db;
+  --c-text-1:        #0f172a;
+  --c-text-2:        #475569;
+  --c-text-3:        #94a3b8;
+  --c-text-4:        #cbd5e1;
+  --c-nav:           rgba(255,255,255,0.92);
+  --c-tag-bg:        #f1f5f9;
+  --c-tag-text:      #475569;
+  --c-input-bg:      #ffffff;
+  --c-icon-bg:       rgba(37,99,235,0.08);
+  --c-icon-border:   rgba(37,99,235,0.25);
+  --c-icon:          #2563eb;
   color-scheme: light;
 }
 
 .dark {
+  --c-bg:            #0a0a0a;
+  --c-bg-alt:        #0d1117;
+  --c-card:          #111827;
+  --c-border:        #1f2937;
+  --c-border-input:  #374151;
+  --c-text-1:        #f3f4f6;
+  --c-text-2:        #9ca3af;
+  --c-text-3:        #6b7280;
+  --c-text-4:        #374151;
+  --c-nav:           rgba(10,10,10,0.92);
+  --c-tag-bg:        #1f2937;
+  --c-tag-text:      #9ca3af;
+  --c-input-bg:      #111827;
+  --c-icon-bg:       rgba(59,130,246,0.10);
+  --c-icon-border:   rgba(59,130,246,0.20);
+  --c-icon:          #60a5fa;
   color-scheme: dark;
 }
 
+/* ── Base ───────────────────────────────────────── */
 html {
   scroll-behavior: smooth;
 }
 
 body {
+  background-color: var(--c-bg);
+  color: var(--c-text-1);
   font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
